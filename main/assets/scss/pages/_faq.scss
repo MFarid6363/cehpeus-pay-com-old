@@ -1,0 +1,179 @@
+body {
+  &.faq {
+      h1 {
+        font-size: 48px;
+        margin-bottom: 24px;
+        @extend .c-dark;
+
+        & + p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 185%;
+          color: #000000;
+          margin-bottom: 32px;
+        }
+      }
+
+    .faq-content {
+      p {
+        margin-bottom: 24px;
+      }
+
+      form {
+        padding-bottom: 80px;
+      }
+    }
+
+    .contact-us {
+      /*form {
+        label {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: #000000;
+          margin-bottom: 8px;
+        }
+
+        input[type=text],
+        input[type=email] {
+          padding: 12px;
+          background: #FFFFFF;
+          border: 1px solid #000000;
+          width: 100%;
+          margin-bottom: 24px;
+        }
+
+        input[type=submit] {
+          padding: 12px 24px;
+          background: #000000;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: #FFFFFF;
+          margin-top: 24px;
+        }
+      }*/
+    }
+
+    p {
+      margin-bottom: 5px;
+      font-size: 16px;
+
+      @extend .c-dark;
+    }
+
+    .accordion-item {
+      background-color: transparent;
+      border: 0;
+      border-top-width: 1px;
+      border-top-color: black;
+      border-top-style: solid;
+
+      &:last-child {
+        border-bottom-width: 1px;
+        border-bottom-color: black;
+        border-bottom-style: solid;
+      }
+
+      .accordion-button {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: #000000;
+        background-color: transparent;
+        outline: none;
+        box-shadow: none;
+        padding-top: 22px;
+        padding-bottom: 22px;
+
+        &:not(.collapsed) {
+          background-color: transparent;
+          box-shadow: none;
+        }
+      }
+
+      &:first-of-type {
+        border-radius: 0!important;
+      }
+
+      &:last-of-type {
+        border-radius: 0!important;
+      }
+    }
+
+    .more {
+      padding-top: 64px;
+      text-align: center;
+
+      .more-link {
+        padding: 12px 24px;
+        border: 1px solid #030F4C;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #030F4C;
+        text-decoration: none;
+      }
+    }
+
+    .image-container {
+      overflow: hidden;
+      position: relative;
+      height: 717px;
+
+      .image-slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        -webkit-animation: linear infinite;
+        -webkit-animation-name: slide;
+        -webkit-animation-duration: 40s;
+      }
+
+      .star-overlay {
+        z-index: 1;
+        position: absolute;
+        top: 63px;
+        left: 54px;
+      }
+
+      .text-overlay {
+        position: absolute;
+        bottom: 48px;
+        left: 54px;
+
+        h3 {
+          font-weight: 700;
+          font-size: 72px;
+          line-height: 120%;
+          color: #C7BAE9;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .faq-content {
+    padding: 112px 64px 68px 64px!important;
+  }
+  .contact-us {
+    padding: 112px 64px!important;
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    left: 0%;
+    transform: translateX(0%);
+  }
+  50% {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  100% {
+    left: 0%;
+    transform: translateX(0%);
+  }
+}

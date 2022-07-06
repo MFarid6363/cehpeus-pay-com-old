@@ -1,0 +1,199 @@
+@media(max-width: 760px) {
+  body, p {
+    line-height: 33px !important;
+  }
+
+  li {
+    line-height: 24px;
+  }
+
+  h2 {
+    font-size: 36px !important;
+    line-height: 43px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .navbar {
+    .container-fluid {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .navbar-collapse.show {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 72px;
+    background: #030f4c;
+    width: 100%;
+    z-index: 999;
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      li:last-child {
+        margin-top: 15px;
+      }
+    }
+
+    .dropdown-menu {
+      li {
+        margin-bottom: 0;
+      }
+      li:last-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .welcome {
+    padding-bottom: 0 !important;
+  }
+
+  .money-transfer {
+    min-height: auto !important;
+    padding-bottom: 57px !important;
+  }
+
+  .mobile-application {
+    padding-bottom: 0px !important;
+
+    .top-padding {
+      padding-top: 30px !important;
+    }
+  }
+
+  .take-off-to-space {
+    padding: 90px 20px !important;
+  }
+
+  .digital-card {
+    padding: 117px 20px 0px !important;
+  }
+
+  .guiding-star {
+    padding: 117px 20px 40px !important;
+
+    h2 {
+      padding: 0 !important;
+      margin-bottom: 50px !important;
+    }
+  }
+
+  .galaxify-finances {
+    padding-bottom: 50px !important;
+
+    .text-content {
+      p {
+        padding: 0 0 50px 0 !important;
+      }
+    }
+
+    .galaxy-image-mobile {
+      position: relative;
+      bottom: 0px !important;
+    }
+  }
+
+  .news {
+    .more {
+      margin-top: 50px !important;
+    }
+
+    padding-bottom: 40px !important;
+  }
+
+  .faq {
+    .image-container {
+      display: none;
+    }
+  }
+
+  .currencies {
+    .d-flex {
+      img {
+        margin-left: 12px !important;
+
+        &:first-child {
+          margin-left: 33px !important;
+        }
+      }
+      gap: 50px;
+    }
+  }
+
+  .vacancies {
+    .image-container {
+      display: none;
+    }
+  }
+
+  .subscribe-button {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .homepage {
+    .countries {
+      &.show {
+        margin: 0 -20px 0 -20px;
+        padding: 0 20px 0 20px;
+
+        .select {
+          padding: 12px 2px !important;
+
+          span.btn {
+            top: 22px !important;
+          }
+        }
+      }
+
+      .select {
+        font-size: 20px;
+        padding: 12px 0 6px !important;
+
+        span.btn {
+          top: 26px;
+        }
+      }
+
+      ul {
+        li {
+          a {
+            font-size: 18px;
+            padding: 12px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width: 840px) {
+  .navbar-nav {
+    .nav-link {
+      padding-right: 10px !important;
+      padding-left: 10px !important;
+    }
+  }
+
+  .vacancies {
+    .vacancies-bg {
+      display: none !important;
+    }
+
+    .row {
+      .col-lg-6 {
+        width: 100% !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &.homepage {
+    position: relative;
+    width: 100%;
+
+    background: #030F4C linear-gradient(180deg, #8302D2 0%, #3B1CA3 36.46%, #030F4C 100%) no-repeat;
+
+    .homepage-container {
+      flex: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      height: 100%;
+      padding: 170px 28px 0 28px;
+
+      @include media-breakpoint-down(lg) {
+        padding: 30px 28px 0 28px;
+      }
+
+      .logo {
+        margin-bottom: 68px;
+
+        @include media-breakpoint-down(md) {
+          margin-bottom: 37px;
+        }
+      }
+
+      .content {
+        p {
+          max-width: 600px;
+        }
+
+        .choose-country {
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    footer {
+      height: 25px;
+      margin-top: 25px;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 152px;
+        position: relative;
+      }
+
+      @include media-breakpoint-down(lg) {
+        .footer-information {
+          flex-direction: column;
+        }
+      }
+
+      li {
+        @include media-breakpoint-down(lg) {
+          text-align: left!important;
+        }
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #FFFFFF;
+
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 10px;
+        }
+      }
+
+      a {
+        margin-left: 10px;
+      }
+    }
+  }
+}

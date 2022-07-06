@@ -1,0 +1,267 @@
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1440px
+) !default;
+
+$navbar-dark-color: #FFFFFF;
+$navbar-nav-link-padding-x: 17px;
+
+$font-family-manrope: 'Manrope', sans-serif !default;
+$font-family-base: $font-family-manrope !default;
+$link-decoration: none;
+
+@import "base/functions";
+@import "base/variables";
+@import "base/mixins";
+@import "base/utilities";
+@import "base/root";
+@import "base/reboot";
+@import "base/api";
+
+@import "base/containers";
+@import "base/grid";
+@import "base/dropdown";
+@import "base/navbar";
+
+@import "colors";
+@import "fonts";
+@import "typography";
+
+@import "components";
+
+@import "pages/home";
+@import "pages/rules";
+@import "pages/faq";
+@import "pages/about";
+@import "mobile";
+
+.container {
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+
+.pull-right {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.z-index-0 {
+  z-index: 0;
+  position: relative;
+}
+.z-index-2 {
+  z-index: 2;
+  position: relative;
+}
+.z-index-3 {
+  z-index: 999;
+  position: relative;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+nav {
+  height: 72px;
+
+  .container-fluid {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+
+    .dropdown-toggle::after {
+      content: none;
+    }
+
+    .btn-link {
+      text-decoration: none;
+      padding: 8px 20px;
+      background-color: white;
+      font-weight: 500;
+      font-size: 16px;
+      border-radius: 0;
+      margin-left: 17px;
+      @extend .c-dark;
+    }
+  }
+
+  .navbar-brand {
+
+  }
+}
+
+footer {
+  padding: 80px 64px;
+  position: relative;
+  z-index: 99;
+
+  img.logo {
+    margin-bottom: 24px;
+  }
+
+  hr {
+    border-top: 1px solid #030F4C;
+    opacity: 1;
+    margin-bottom: 32px;
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      list-style: none;
+      padding-bottom: 16px;
+
+      a {
+        display: flex;
+        color: #030F4C;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        text-decoration: none;
+
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 150%;
+          margin: 0;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: 16px;
+    color: #030F4C;
+    margin-bottom: 24px;
+
+    &.header {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 150%;
+      color: #030F4C;
+      margin-bottom: 24px;
+    }
+  }
+
+  span {
+    display: block;
+    margin-top: 16px;
+    font-size: 12px;
+    color: #030F4C;
+    margin-bottom: 30px;
+  }
+
+  a.dropdown-toggle {
+    background-color: transparent!important;
+    outline: none!important;
+    font-size: 16px!important;
+    line-height: 150%!important;
+    color: #030F4C!important;
+    font-weight: 600!important;
+    padding-right: 0!important;
+
+    &:after {
+      content: none;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  .copyright {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #030F4C;
+  }
+
+  .links {
+    a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      text-decoration-line: underline;
+      color: #030F4C;
+      margin-left: 54px;
+    }
+  }
+}
+.links-elements{
+  margin: 20px;
+}
+
+form {
+  input[type=text],
+  input[type=email] {
+    background: #FFFFFF;
+    border: 1px solid #030F4C;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+    color: #505050;
+    padding: 12px;
+    margin-right: 16px;
+  }
+  input.error {
+    border: 1px solid #F00000;
+  }
+  input[type=submit] {
+    border: 1px solid #030F4C;
+    box-sizing: border-box;
+    padding: 12px 24px;
+    background-color: white;
+  }
+}
+
+.small-red {
+  text-align: left;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #F00000;
+  margin-bottom: 16px;
+  display: block;
+}
+
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload {
+  padding: 12px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  width: 100%;
+  margin-bottom: 24px;
+  min-height: 50px;
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

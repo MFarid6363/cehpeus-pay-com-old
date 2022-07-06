@@ -1,0 +1,201 @@
+body {
+  &.about {
+    .banner-image-wrapper {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/assets/images/about-header.jpg");
+      background-size: cover;
+      background-position-y: center;
+      position: relative;
+
+      .text-wrapper {
+        max-width: 768px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10% 20px;
+      }
+    }
+
+    .strategy {
+      h2 {
+        display: block;
+      }
+      h2 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;
+      }
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 185%;
+        color: #FFFFFF;
+      }
+
+      .logo {
+        display: block;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+      }
+    }
+    .founders {
+      h2 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;
+        color: #000000;
+      }
+
+      img {
+        margin-bottom: 24px;
+        max-width: 100%;
+      }
+
+      .name {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        margin-bottom: 0;
+        color: #000000;
+      }
+      .position {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 185%;
+        margin-bottom: 16px;
+        color: #000000;
+      }
+      .description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000000;
+      }
+    }
+
+    .vacancies {
+      .vacancies-bg {
+        display: block;
+      }
+    }
+
+    .news {
+      img {
+        margin-bottom: 24px;
+      }
+
+      .title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+        color: #000000;
+        margin-bottom: 8px;
+      }
+      .description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000000;
+        margin-bottom: 24px;
+      }
+
+      a.more {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000000;
+        text-align: center;
+        margin-top: 60px;
+        display: block;
+        text-decoration: none;
+
+        img {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .contact-us-map {
+      p {
+        max-width: 768px;
+      }
+
+      .contact-block {
+        img {
+          margin-bottom: 20px;
+        }
+        .name {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 140%;
+          color: #000000;
+          margin-bottom: 8px;
+        }
+        a.description {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          text-decoration-line: underline;
+          color: #000000;
+          margin-bottom: 44px;
+          display: block;
+        }
+        p.description {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: #000000;
+          margin-bottom: 44px;
+        }
+      }
+
+      .map {
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .image-container {
+      overflow: hidden;
+      position: relative;
+      height: 717px;
+
+      .image-slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+
+        -webkit-animation: linear infinite;
+        -webkit-animation-name: slide;
+        -webkit-animation-duration: 30s;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-us-map, .news, .vacancies, .founders, .strategy {
+    padding: 112px 64px!important;
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    left: 0%;
+    transform: translateX(0%);
+  }
+  50% {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  100% {
+    left: 0%;
+    transform: translateX(0%);
+  }
+}

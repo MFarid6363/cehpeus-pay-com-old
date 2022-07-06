@@ -1,0 +1,65 @@
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  margin-bottom: 24px;
+
+  @extend .c-white;
+
+  @include media-breakpoint-down(md) {
+    font-size: 34px;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  margin-bottom: 24px;
+
+  @extend .c-white;
+}
+
+h3 {
+  @extend .c-white;
+
+  @include media-breakpoint-down(md) {
+    font-size: 28px !important;
+  }
+}
+
+h4 {
+
+  @extend .c-white;
+}
+
+a {
+
+  @extend .c-white;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 185%;
+  margin-bottom: 38px;
+
+  @extend .c-white;
+}
+
+span {
+  &.red {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 58px;
+
+    @extend .c-red, .d-block;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 38px;
+    }
+  }
+}

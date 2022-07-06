@@ -1,0 +1,39 @@
+.c-white {
+  color: white;
+}
+.c-red {
+  color: #F00000;
+}
+.c-beige {
+  color: #FFF3E1;
+}
+.c-black {
+  color: $black;
+}
+.c-light-purple {
+  color: #D2C0F4;
+}
+.c-dark {
+  color: #030F4C;
+}
+.bg-dark {
+  background-color: #030F4C!important;
+}
+.bg-light-purple {
+  background-color: #D2C0F4;
+}
+.bg-dark-purple {
+  background-color: #C7BAE9;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-dark-gradient {
+  background: linear-gradient(180deg, #8302D2 0%, #3B1CA3 36.46%, #030F4C 100%);
+}
+.bg-beige {
+  background-color: #FFF3E1;;
+}
+.bg-beige-dark {
+  background-color: #F5D19B;
+}
